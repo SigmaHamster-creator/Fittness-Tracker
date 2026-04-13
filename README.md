@@ -1,5 +1,5 @@
 # Fittness-Program
-Project Overview:
+Project Overview: Fitness Tracker
 
 Target User(s):
 
