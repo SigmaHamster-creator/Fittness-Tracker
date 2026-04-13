@@ -22,7 +22,7 @@ Functional Requirements (Must-have Features):
   
     
   + (Leon)
-  + Save data to a file(data)
+  + Save data to a file(str/str/int)
   + Read data from saved files()
 
 Non-Functional Requirements (Constraints):
