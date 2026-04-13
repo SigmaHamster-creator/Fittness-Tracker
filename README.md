@@ -10,7 +10,7 @@ Functional Requirements (Must-have Features):
   + Update_activity(name/description)
   + Input for time Spent(time)
   + Print all current activity()
-  + Print each avtivity spent time()
+  + Print each activity spent time()
   + Change spent time of activity(name)
   + Save data to a file(data)
   + Read data from saved files()
