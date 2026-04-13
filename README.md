@@ -17,7 +17,13 @@ Functional Requirements (Must-have Features):
 
 Non-Functional Requirements (Constraints):
 
+No app
+No UI/UX
+
 Out-of-Scope Features:
+
+NO multi-user
+NO Fitness Advice
 
 Deliverables:
 
