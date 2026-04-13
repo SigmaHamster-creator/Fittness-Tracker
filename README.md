@@ -24,6 +24,7 @@ Out-of-Scope Features:
 
 NO multi-user
 NO Fitness Advice
+NO storage other than txt file
 
 Deliverables:
 
