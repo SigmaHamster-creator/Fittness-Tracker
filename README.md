@@ -5,17 +5,23 @@ Target User(s): People that are self training and wants to track their fitness p
 
 Functional Requirements (Must-have Features):
   
-  + add_activity(name/description)
-  + remove_activity(name)
-  + Update_activity(name/description)
-    
-  + Input for time Spent(time)
-  + Change spent time of activity(name)
+  +  (yiming)
+  + add_activity(str/str)
+  + remove_activity(str)
+  + Update_activity(str/str)
+  + Includes Verfication
+
+  + (Danny)
+  + Input for activity and description(str,str)
+  + Input for time Spent(int)
+  + Change spent time of activity(name:str)
   
+  + (Steven)
   + Print all current activity()
   + Print each activity spent time()
   
     
+  + (Leon)
   + Save data to a file(data)
   + Read data from saved files()
 
