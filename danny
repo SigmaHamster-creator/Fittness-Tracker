@@ -1,0 +1,54 @@
+#FUNCTION
+    
+def create_activity(name, description, time):
+    activity = {
+        "name" : name,
+        "description" : description,
+        "time" : time 
+    }
+    return activity
+
+def display_list(List_Activities):
+    for i in List_Activities:
+        if i == 0:
+            print("No activities yet")
+        else:
+            print(f"Name: {i["name"]} | Description: {i["description"]} | Time: {i["time"]} Minutes")
+     
+def add_activity(list, activity):
+    list.append(activity)
+    return list
+
+def total_time_spent(List_Activities):
+    total = 0
+    for i in List_Activities:
+        total += int(i["time"])
+    return total
+
+def remove_activity(list, activity):
+    list.remove(activity)
+    return list
+
+     
+#Main Program 
+def main():
+    List_Activities = []
+    Total_time = []
+    Final_time = 0
+    while True:
+        print("="*108)
+        print("\t\t\t\t\t\tMAIN MENU")
+        print("="*108)
+        print("1. View List | 2. Add Activity (With time) | 3. Remove Activitiy | 4. Update Activity | 5. Change time spent")
+        choice = int(input("Select option from 1-5: "))
+        if choice == 1:
+          display_list(List_Activities)
+          print(f"Total time spent: {total_time_spent(List_Activities)} Minutes")
+        elif choice == 2:
+            n = input("Enter name of the activity: ")
+            d = input("Add some note for your activity: ")
+            t = int(input("Enter time you would spend on this activity in MINUTES: "))
+
+            new_activity = create_activity(n, d, t)
+            my_activity = add_activity(List_Activities, new_activity)
+main()
