@@ -23,11 +23,17 @@ def save_data(activities):
 
 #This converts the activities back into dict
 def read_data():
-    with open ("Data.txt","r") as f:
-        for line in f:
-            n,time,description = line.strip().split(",")
-            activities[n] = Menu(time, description)
+    activities = {}
+    try:
+        with open ("Data.txt","r") as f:
+            for line in f:
+                n,time,description = line.strip().split(",")
+                activities[n] = Menu(time, description)
         return activities
+    except FileNotFoundError:
+        print("The file does not exist.")
+    return activities
+
 
 activities = {}
 
