@@ -45,5 +45,5 @@ try:
     print("name: "+ search + ", " , activities[search])
 except KeyError:
     print("This activity was deleted!")
-# I will test another method, dictionary[dictionary] method next time!
+# I will test another method, dictionary[dictionary] method next time
 # Yiming
