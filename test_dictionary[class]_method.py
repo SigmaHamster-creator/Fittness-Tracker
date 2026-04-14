@@ -47,3 +47,18 @@ except KeyError:
     print("This activity was deleted!")
 # I will test another method, dictionary[dictionary] method next time
 # Yiming
+
+#This saves the activities dict in terms of string
+def save_data(activities):
+    with open ("Data.txt","w") as f:
+            for n,m in activities.items():
+                f.write(n + "," + str(m.time) + "," + str(m.description) + "\n")
+
+#This converts the activities back into dict
+def read_data():
+    activities = {}
+    with open ("Data.txt","r") as f:
+        for line in f:
+            n,time,description = line.strip().split(",")
+            activities[n] = Menu(time,description)
+        return activities
