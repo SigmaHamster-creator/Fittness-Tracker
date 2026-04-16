@@ -9,9 +9,10 @@
 
 ## Test Case Table
 
-| Test ID | Description | Input(s) | Expected Output | Type | Pass/Fail | Notes |
-|---------|-------------|----------|-----------------|------|-----------|-------|
--  01.    |Test int name|123,abc,10|name must be str | edge | 
+| Test ID | Description | Input(s) | Expected Output | Type | Pass/Fail |  Notes  |
+|---------|-------------|----------|-----------------|------|-----------|---------|
+   01.    |Test int name|123,abc,10|name must be str | edge |           |By:Steven|
+    
 
 ## Code Used for Testing
 
