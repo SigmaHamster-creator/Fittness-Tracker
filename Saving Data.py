@@ -27,8 +27,11 @@ def read_data():
     try:
         with open ("Data.txt","r") as f:
             for line in f:
-                n,time,description = line.strip().split(",")
-                activities[n] = Menu(time, description)
+                line = line.strip()
+                if not line:
+                    continue
+                n,time,description = line.strip().split(",",2)
+                activities[n] = Menu(time,description)
         return activities
     except FileNotFoundError:
         print("The file does not exist.")
@@ -38,7 +41,7 @@ def read_data():
 activities = {}
 
 activities = read_data()
-add_activity(input("name: "), input("time: "), input("description: "))
+add_activity(input("name:"), input("time:"), input("description:"))
 save_data(activities)
 new_activities = read_data()
 for name,data in new_activities.items():
