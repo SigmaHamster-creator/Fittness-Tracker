@@ -11,7 +11,7 @@
 
 | Test ID | Description | Input(s) | Expected Output | Type | Pass/Fail | Notes |
 |---------|-------------|----------|-----------------|------|-----------|-------|
--  01.    |Test int name|123,abc,10|name must be str | error| 
+-  01.    |Test int name|123,abc,10|name must be str | edge | 
 
 ## Code Used for Testing
 
