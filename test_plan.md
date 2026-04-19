@@ -9,10 +9,10 @@
 
 ## Test Case Table
 
-| Test ID | Description | Input(s) | Expected Output | Type | Pass/Fail | Notes |
-|---------|-------------|----------|-----------------|------|-----------|-------|
--  01.    |Test int name|123,abc,10|name must be str | edge | 
--  02.    |Test reading a empty file|"","",""|"time: , description: "|edge||Tested by Leon
+| Test ID | Description | Input(s) | Expected Output | Type | Pass/Fail |  Notes  |
+|---------|-------------|----------|-----------------|------|-----------|---------|
+   01.    |Testprintlist|push,abc,1|Name: push, Description: abc, Time Spent: 1 minute | edge |           |By:Steven|
+    
 
 ## Code Used for Testing
 
