@@ -22,12 +22,12 @@ python Fitness-Tracker.py
 - Input: 
 
 ```python
-1(Add Activity (With time))
+1#Add Activity (With time)
 run
 slow pace
 60
 
-2(View List)
+2#View List
 ```
 
 - Output:
@@ -44,15 +44,15 @@ Total time spent: 60 Minutes
 - Input: 
 
 ```python
-1(Add Activity (With time))
+1#Add Activity (With time)
 run
 slow pace
 60
 
-3(Remove Activity)
+3#Remove Activity
 run
 
-2(View List)
+2#View List
 ```
 
 - Output:
@@ -71,17 +71,17 @@ Total time spent: 0 Minutes
 - Input: 
 
 ```python
-1(Add Activity (With time))
+1#Add Activity (With time)
 run
 slow pace
 60
 
-4(Update Activity)
+4#Update Activity
 run
 120
 marathon
 
-2(View List)
+2#View List
 ```
 
 - Output:
