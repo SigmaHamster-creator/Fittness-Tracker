@@ -10,15 +10,26 @@
 def create_activity(name, description, time): #Yiming
     """
     Description:
+    Creates a dicionary activity with its details attached.
 
     Parameters:
-        
+    name(str):The name of the activity.
+    description(str):The description of the activity.
+    time(int):The time used for the activity.
+
     Returns:
+    dict:The activity and its details.
 
     Raises:
+    ValueError: If name is a integer.
 
     Example:
-        >>>
+        >>> create_activity("run","slow run",200)
+        activity = {
+        "name" : "run",
+        "description" : "slow run",
+        "time" : 200
+    
     """
     activity = {
         "name" : name,
@@ -30,15 +41,21 @@ def create_activity(name, description, time): #Yiming
 def display_list(list_activities): #STEVEN
     """
     Description:
+    Shows the activity(ies) with its detials in a printing format.
 
     Parameters:
+    list_activities(list): a list of activitiy(ies) dictionary(ies).
         
     Returns:
+    str:printing message.
 
     Raises:
+    ValueError: if list_activities is a integer.
 
     Example:
-        >>>
+        >>>display_list([{"name" : "run","description" : "slow run","time" : 200 }])
+        1. Name: run | Description: slow run | Time: 200 Minutes
+
     """
     if len(list_activities) == 0:
         print("No activities yet")
@@ -50,15 +67,21 @@ def display_list(list_activities): #STEVEN
 def add_activity(list_activities, activity): 
     """
     Description:
+    Adds new activity to the activity list.
 
     Parameters:
+    list_activities(list): a list of activitiy(ies) dictionary(ies).
+    activity(dict):The activity and its details.
         
     Returns:
+    list: a list of activitiy(ies) dictionary(ies) with new activity added.
 
     Raises:
+    ValueError: if list_activities is a integer.
 
     Example:
-        >>>
+        >>>add_activity([], {"name" : "run","description" : "slow run","time" : 200 })
+        [{"name" : "run","description" : "slow run","time" : 200 }]
     """
     
     list_activities.append(activity)
@@ -74,15 +97,14 @@ def total_time_spent(list_activities): #STEVEN
 def delete_activity(list_activities): # Yiming
     """
     Description:
+    Deletes a activity from the activity list.
+    The function asks user the enter the activity they want to delete and delete if it exists.
 
     Parameters:
-        
+    list_activities(list): a list of activitiy(ies) dictionary(ies).
+
     Returns:
-
-    Raises:
-
-    Example:
-        >>>
+    list: a list of activitiy(ies) dictionary(ies) with a activity deleted.
     """
         
     remove_input = input("Enter the name of activity that you want to remove: ")
@@ -99,15 +121,14 @@ def delete_activity(list_activities): # Yiming
 def update_activity(list_activities): # Yiming
     """
     Description:
+    Changes the details of a activity.
+    The functions ask users to which activity to change, if the activity exists, asks users to enter the new details.
 
     Parameters:
-        
+    list_activities(list): a list of activitiy(ies) dictionary(ies).
+
     Returns:
-
-    Raises:
-
-    Example:
-        >>>
+    list: a list of activitiy(ies) dictionary(ies) with the details of a activity changed.
     """
     update_input = input("Enter name of activity you want to update: ")
     found = False
@@ -126,15 +147,16 @@ def update_activity(list_activities): # Yiming
 def change_time(list_activities):
     """
     Description:
+    Changes the time spent of a activity.
+    THe function asks the users to choose a activity they want to change time, if it exists, asks them to enter the new time.
+    The function will check whether the list is empty first.
 
     Parameters:
-        
+    list_activities(list): a list of activitiy(ies) dictionary(ies).
+
     Returns:
-
-    Raises:
-
-    Example:
-        >>>
+    list: a list of activitiy(ies) dictionary(ies) with the details of a activity changed.
+    
     """
     if len(list_activities) == 0:
         print("No activities to update yet!")
@@ -153,15 +175,13 @@ def change_time(list_activities):
 def save_data(list_activities): #Leon
     """
     Description:
+    Saves the activity(ies) data to another file "Data.txt" so that it can be stored for further use.
 
     Parameters:
-        
+    list_activities(list): a list of activitiy(ies) dictionary(ies).
+
     Returns:
-
-    Raises:
-
-    Example:
-        >>>
+    str: messaged stored in Data.txt
     """
     with open("Data.txt", "w") as f:
         for a in list_activities:
@@ -170,15 +190,16 @@ def save_data(list_activities): #Leon
 def read_data(): #Leon
     """
     Description:
+    Reads activity(ies) data from the file "Data.txt" and converts it back into data type ready to be used.
 
     Parameters:
-        
+    None
+
     Returns:
+    list_activities(list): a list of activitiy(ies) dictionary(ies).
 
-    Raises:
-
-    Example:
-        >>>
+    Raise:
+    FileNotFoundError: if the file does not exists.
     """
     list_activities = []
     try:
