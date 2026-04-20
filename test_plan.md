@@ -16,6 +16,8 @@
 |  03.    |test create_activity|[jogging, 30, running slowly for exercise]||normal case||Tested by Yiming|
 |  04.    |test update_activity|[jogging, , ]||edge case|Pass||
 |  05.    |test delete_activity|run|can not found activity run|error case|Fail||
+|  06.    |test add_activity|List_Activity, new_activity|Activity added!|normal case|Pass|Tested by Danny|
+|  07.    |test change_time|100|Invalid number, please try again!|error case|Fail|Tested by Danny|
 
 ## Code Used for Testing
 
