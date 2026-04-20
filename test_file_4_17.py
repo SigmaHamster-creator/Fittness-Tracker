@@ -3,9 +3,6 @@ import io
 import sys
 import unittest
 
-def your_function_here(param):
-    pass #placeholder
-
 def create_activity(name, description, time): #Yiming
     activity = {
         "name" : name,
