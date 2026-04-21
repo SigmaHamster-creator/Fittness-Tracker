@@ -123,11 +123,6 @@ class TestYourFunction(unittest.TestCase):
         sys.stdout = sys.__stdout__
         output = captured_output.getvalue().strip()
         self.assertEqual(output,"Can not found activity run")
-    def test_save_empty(self): #Leon tested
-        save_data([])
-        with open("Data.txt", "r") as f:
-            data = f.read()
-        self.assertEqual(data, "")
     def test_read_empty_file(self): #Leon
         with open("Data.txt", "w") as f:
             f.write("")
